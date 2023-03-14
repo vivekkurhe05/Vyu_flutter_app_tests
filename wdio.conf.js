@@ -59,7 +59,7 @@ export const config = {
             platformName: "Android",
             "appium:udid": process.env.UDID, // vivo 1929
             "appium:automationName": "UIAutomator2",
-            "appium:app": path.join(process.cwd(), "\\app\\android\\Vyu2.0_qa_270223_1.apk"),
+            "appium:app": path.join(process.cwd(), "\\app\\android\\Vyu2.0_qa_070323.apk"),
             "appium:autoGrantPermissions": true,
             "appium:appPackage": "com.ennoventure.vyu2",
             "appium:appActivity": "com.ennoventure.vyu2.MainActivity",
