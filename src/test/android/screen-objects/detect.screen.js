@@ -3,6 +3,7 @@ const TITLE_2 = '~Verify';
 const INSTRUCTION_1 = '//android.view.View[@content-desc="Align the above image to the Product"]';
 const INSTRUCTION_2 = '//android.view.View[@content-desc="Please hold still…"]';
 const INSTRUCTION_3 = '//android.view.View[@content-desc="Please wait while we verify this product for you….."]';
+const RESULT = '~Genuine';
 const CAPTURE_BTN = '~CAPTURE';
 
 class DetectScreen {
@@ -30,6 +31,11 @@ class DetectScreen {
     get instruction_3() {
         $(INSTRUCTION_3).waitForDisplayed({timeout: 10000});
         return $(INSTRUCTION_3);
+    }
+
+    get result() {
+        $(RESULT).waitForDisplayed({timeout: 20000})
+        return $(RESULT);
     }
 
     get capture_btn() {
